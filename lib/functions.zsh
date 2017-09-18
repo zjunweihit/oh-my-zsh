@@ -6,6 +6,10 @@ function uninstall_oh_my_zsh() {
   env ZSH=$ZSH sh $ZSH/tools/uninstall.sh
 }
 
+function update_oh_my_zshrc() {
+  env ZSH=$ZSH sh $ZSH/tools/update_zshrc.sh
+}
+
 function upgrade_oh_my_zsh() {
   env ZSH=$ZSH sh $ZSH/tools/upgrade.sh
 }
