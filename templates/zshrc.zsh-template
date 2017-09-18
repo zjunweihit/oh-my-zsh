@@ -85,6 +85,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 #-----------------------  zjunwei -------------------------------
+# source customed bashrc for zsh
+[ -f $HOME/.zsh_bashrc ] && source $HOME/.zsh_bashrc
+
 unix-word-rubout() {
     local WORDCHARS='*?/_-.[]~=&;!#$%^(){}<>'
     zle backward-kill-word
@@ -93,9 +96,6 @@ zle -N unix-word-rubout
 bindkey '^W' unix-word-rubout
 bindkey '^Q' backward-delete-word
 bindkey '^U' backward-kill-line
-
-## -- global --
-#alias g='global'
 
 ## -- autojump --
 #source $HOME/.autojump/etc/profile.d/autojump.sh
