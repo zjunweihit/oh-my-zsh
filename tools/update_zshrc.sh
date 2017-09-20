@@ -27,6 +27,10 @@ then
     mv ~/.zshrc ~/.zshrc.pre-oh-my-zsh;
   fi
   cp $ZSH/templates/zshrc.zsh-template ~/.zshrc
+  sed "/^export ZSH=/ c\\
+  export ZSH=$ZSH
+  " ~/.zshrc > ~/.zshrc-omztemp
+  mv -f ~/.zshrc-omztemp ~/.zshrc
 else
   printf "${RED}%s${NORMAL}\n" 'There was an error updating. Try again later?'
 fi
