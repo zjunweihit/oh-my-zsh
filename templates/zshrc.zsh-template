@@ -96,7 +96,7 @@ zle -N unix-word-rubout
 bindkey '^W' unix-word-rubout
 bindkey '^Q' backward-delete-word
 bindkey '^U' backward-kill-line
-bindkey '^B' vi-backward-word-end
+bindkey '^B' vi-backward-word
 
 ## -- autojump --
 [[ -s $HOME/.autojump/etc/profile.d/autojump.sh ]] && source $HOME/.autojump/etc/profile.d/autojump.sh
