@@ -31,7 +31,6 @@ then
   export ZSH=$ZSH
   " ~/.zshrc > ~/.zshrc-omztemp
   mv -f ~/.zshrc-omztemp ~/.zshrc
-  source ~/.zshrc
 else
   printf "${RED}%s${NORMAL}\n" 'There was an error updating. Try again later?'
 fi
